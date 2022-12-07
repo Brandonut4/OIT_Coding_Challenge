@@ -148,6 +148,7 @@ def Execute():
     playAgain = 'Y'
     while playAgain.upper() == 'Y': 
         blankWord, answerWord = ChooseWord() #randomize word
+        print(f'The word to guess has {len(blankWord)} letters.')
         playAgain = PlayGame(blankWord, answerWord, playerName) 
     print('Thanks for playing!')
 
